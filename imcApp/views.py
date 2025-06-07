@@ -8,9 +8,9 @@ def calculadora_view(request):
     categoria = None
 
 
-    if request.method == "GET" and 'peso' in resquest.GET and 'altura' in request.GET:
+    if request.method == "GET" and 'peso' in request.GET and 'altura' in request.GET:
         try:
-            peso = float(resquest.GET.get('peso'))
+            peso = float(request.GET.get('peso'))
             altura = float(request.GET.get('altura'))
 
             if altura > 0:
