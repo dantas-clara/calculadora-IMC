@@ -1,4 +1,4 @@
-from imcApp.models import *
+from django.db import models
 
 
 class Profile(models.Model):
